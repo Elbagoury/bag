@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bag>
+    <record id="base.main_company" model="res.company">
+        <field name="social_twitter">https://twitter.com/Bag</field>
+        <field name="social_facebook">https://www.facebook.com/Bag</field>
+        <field name="social_linkedin">https://www.linkedin.com/company/bag</field>
+        <field name="social_youtube">https://www.youtube.com/user/OpenERPonline</field>
+        <field name="social_github">https://github.com/bag</field>
+        <field name="social_instagram">https://www.instagram.com/explore/tags/bag/</field>
+        <field name="social_tiktok">https://www.tiktok.com/@bag</field>
+    </record>
+</bag>

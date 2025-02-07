@@ -1,0 +1,42 @@
+:root {
+    --bag-purple: #714B67
+} 
+
+.color-primary {
+    color: var(--bag-purple);
+}
+
+.btn.btn-primary {
+    background-color: var(--bag-purple) !important;
+    border-color: var(--bag-purple) !important;
+}
+
+.alert.alert-secondary {
+    color: #017E84 !important;
+    background-color: #017E8425 !important;
+    border-color: #017E8480 !important;
+}
+
+.bag-bg-primary, .bg-primary, .form-check-input:checked, .nav-pills .nav-link.active {
+    background-color: var(--bag-purple) !important;
+    border-color: var(--bag-purple) !important;
+}
+
+.bag-bg-secondary, .bg-secondary {
+    background-color: #017E84 !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link-primary {
+    color: var(--bag-purple) !important;
+    font-size: 12px;
+}

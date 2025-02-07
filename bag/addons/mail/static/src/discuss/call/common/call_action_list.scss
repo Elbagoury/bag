@@ -1,0 +1,8 @@
+.o-discuss-CallActionList button:not(.btn-danger):not(.btn-success):not(.o-discuss-CallActionList-pushToTalk) {
+    background-color: var(--o-discuss-CallActionList-bgColor, #{$o-gray-800});
+    color: #FFFFFF;
+}
+
+.o-discuss-CallActionList button {
+    aspect-ratio: 1;
+}

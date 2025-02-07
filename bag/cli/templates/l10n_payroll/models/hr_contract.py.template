@@ -1,0 +1,9 @@
+# Part of Bag. See LICENSE file for full copyright and licensing details.
+
+from bag import fields, models
+
+
+class HrContract(models.Model):
+    _inherit = 'hr.payslip'
+
+    l10n_{{code}}_field = fields.Char()

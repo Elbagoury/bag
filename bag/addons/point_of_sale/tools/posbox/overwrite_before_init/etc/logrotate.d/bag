@@ -1,0 +1,5 @@
+/var/log/bag/*.log {
+    copytruncate
+    missingok
+    notifempty
+}

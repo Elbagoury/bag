@@ -1,0 +1,16 @@
+<bag>
+    <record id="view_partner_property_form" model="ir.ui.view">
+        <field name="name">res.partner.property.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@id='invoice_send_settings']" position="inside">
+                <label for="peppol_eas" string="Peppol Address"/>
+                <div id="peppol_address" class="row">
+                    <field name="peppol_eas" placeholder="EAS" style="width:50%;"/>
+                    <field name="peppol_endpoint" placeholder="Endpoint" style="width:50%;"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</bag>

@@ -1,0 +1,17 @@
+# Part of Bag. See LICENSE file for full copyright and licensing details.
+
+from bag.addons.sale_mrp.tests.test_multistep_manufacturing import TestMultistepManufacturing
+from bag.tests import common
+
+
+@common.tagged('post_install', '-at_install')
+class TestSaleMrpAccount(TestMultistepManufacturing):
+    def test_mo_get_project_from_so(self):
+        """ ensure the project of MO is inherited from the SO if no project is set """
+        project = self.env['project.project'].create({
+            'name': 'SO Project',
+        })
+        self.sale_order.project_id = project
+        self.assertFalse(self.sale_order.mrp_production_ids.project_id)
+        self.sale_order.action_confirm()
+        self.assertEqual(self.sale_order.mrp_production_ids.project_id, project)
